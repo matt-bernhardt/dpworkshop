@@ -41,6 +41,7 @@
         "drupal/htmlpurifier": "^1.0@RC",
         "drupal/insert": "^1.0",
         "drupal/libraries": "^3.0@alpha",
+        "drupal/media_entity": "^1.8",
         "drupal/simple_block": "^1.0@beta",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
