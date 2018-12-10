@@ -25,6 +25,8 @@
         "drupal/ctools": "^3.0",
         "drupal/diff": "^1.0@RC",
         "drupal/field_group": "^1.0",
+        "drupal/google_analytics": "^2.3",
+        "drupal/htmlpurifier": "^1.0@RC",
         "drupal/simple_block": "^1.0@beta",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
