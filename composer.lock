@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ccd596e9c62a2a6d84f855dac23eb2f",
+    "content-hash": "aff05405aaeabae9a350c94887206dc6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2366,6 +2366,57 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/htmlpurifier",
                 "issues": "https://www.drupal.org/project/issues/htmlpurifier"
+            }
+        },
+        {
+            "name": "drupal/insert",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/insert",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/insert-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "6c37ceedc7821c7efdc5907a0f34adeb68d79b0a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1514827685",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Snater",
+                    "homepage": "https://www.drupal.org/user/3513717"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                }
+            ],
+            "description": "Assists in inserting files, images, or other media into the body field or other text areas.",
+            "homepage": "https://www.drupal.org/project/insert",
+            "support": {
+                "source": "http://cgit.drupalcode.org/insert"
             }
         },
         {
