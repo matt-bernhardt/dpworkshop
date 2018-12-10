@@ -1,0 +1,11 @@
+name: 'HTML Purifier'
+type: module
+description: 'Filter that removes malicious HTML and ensures standards compliant output.'
+package: Filter
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-05-18
+version: '8.x-1.0-rc1'
+core: '8.x'
+project: 'htmlpurifier'
+datestamp: 1526637555
