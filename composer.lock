@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58ff7d410703be04e2310e2ae5afbead",
+    "content-hash": "966c1821c0e40d75c2b23aeee79822eb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3811,6 +3811,17 @@
                 "url"
             ],
             "time": "2018-12-04T20:46:45+00:00"
+        },
+        {
+            "name": "jackmoore/colorbox",
+            "version": "1.6.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "jakub-onderka/php-console-color",

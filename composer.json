@@ -53,6 +53,7 @@
         "drupal/webform": "^5.0@RC",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
+        "jackmoore/colorbox": "^1.6",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8"
