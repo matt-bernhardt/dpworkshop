@@ -13,7 +13,7 @@ log_levels:
   7: 0
   8: 0
 stack: true
-timeout: 2
+timeout: !!float 2
 trace: false
 javascript_error_handler: false
 public_dsn: ''
