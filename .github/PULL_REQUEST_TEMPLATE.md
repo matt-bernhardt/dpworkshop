@@ -11,7 +11,7 @@ achieve these goals?
 #### How can a reviewer manually see the effects of these changes?
 
 #### What are the relevant tickets?
-- https://mitlibraries.atlassian.net/browse/NTI-
+- https://mitlibraries.atlassian.net/browse/DU-
 
 #### Screenshots (if appropriate)
 
