@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_file_attachments
+    - field.field.node.page.field_image
+    - image.style.thumbnail
     - node.type.page
   module:
+    - insert
     - path
     - text
 _core:
@@ -30,6 +34,38 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_file_attachments:
+    weight: 121
+    settings:
+      progress_indicator: throbber
+      insert_absolute: false
+      insert_styles:
+        - icon_link
+        - link
+      insert_default: link
+    third_party_settings: {  }
+    type: insert_file
+    region: content
+  field_image:
+    weight: 122
+    settings:
+      preview_image_style: thumbnail
+      insert_styles:
+        large: large
+        medium: medium
+        thumbnail: thumbnail
+        image: image
+        video_embed_wysiwyg_preview: '0'
+        link: '0'
+        icon_link: '0'
+      insert_default: large
+      insert_width: null
+      progress_indicator: throbber
+      insert_absolute: false
+      insert_rotate: false
+    third_party_settings: {  }
+    type: insert_image
+    region: content
   langcode:
     type: language_select
     weight: 2
