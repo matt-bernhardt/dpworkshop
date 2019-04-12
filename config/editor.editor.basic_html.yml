@@ -20,6 +20,13 @@ settings:
             - Bold
             - Italic
         -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
           name: Linking
           items:
             - DrupalLink
@@ -32,8 +39,11 @@ settings:
         -
           name: Media
           items:
+            - HorizontalRule
             - Blockquote
+            - Table
             - DrupalImage
+            - video_embed
         -
           name: 'Block Formatting'
           items:
@@ -43,13 +53,22 @@ settings:
           items:
             - Source
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
+    video_embed:
+      defaults:
+        children:
+          autoplay: false
+          responsive: true
+          width: '854'
+          height: '480'
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
