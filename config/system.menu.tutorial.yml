@@ -1,0 +1,8 @@
+uuid: a1313f4a-49ad-40ce-a7ee-abb10b515f9a
+langcode: en
+status: true
+dependencies: {  }
+id: tutorial
+label: Tutorial
+description: 'Specifically for the tutorial - book pages, and other content types'
+locked: false
