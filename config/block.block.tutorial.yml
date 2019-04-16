@@ -1,23 +1,23 @@
-uuid: 145cbc1f-843f-46b5-9309-ec78827c2594
+uuid: 7fe95b09-3930-41df-b512-1f1aa2f844a3
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.tutorial
   module:
     - ctools
     - superfish
   theme:
     - bartik
-id: mainnavigation
+id: tutorial
 theme: bartik
 region: sidebar_first
-weight: -8
+weight: -7
 provider: null
-plugin: 'superfish:main'
+plugin: 'superfish:tutorial'
 settings:
-  id: 'superfish:main'
-  label: 'Main navigation'
+  id: 'superfish:tutorial'
+  label: Tutorial
   provider: superfish
   label_display: '0'
   level: '1'
@@ -28,7 +28,7 @@ settings:
   shadow: 1
   speed: fast
   delay: '800'
-  slide: none
+  slide: vertical
   supposition: 1
   hoverintent: 1
   touch: '0'
@@ -73,6 +73,6 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       book: book
-    negate: true
+    negate: false
     context_mapping:
       node: '@node.node_route_context:node'
