@@ -1,0 +1,23 @@
+uuid: 22ff9875-ea5e-4957-b4c3-579861e9f0e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.timeline
+id: node.timeline.field_year
+field_name: field_year
+entity_type: node
+bundle: timeline
+label: Year
+description: 'Four digits, no prefix or suffix (YYYY)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

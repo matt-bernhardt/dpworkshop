@@ -1,0 +1,31 @@
+uuid: cf566951-14ac-4b04-93fe-9a356fbe1e64
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.timeline
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__timeline_block_1
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:timeline-block_1'
+settings:
+  id: 'views_block:timeline-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/91
+    negate: false
+    context_mapping: {  }

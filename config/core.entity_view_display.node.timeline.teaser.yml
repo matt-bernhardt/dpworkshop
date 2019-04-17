@@ -1,0 +1,31 @@
+uuid: 4e3e1f0f-fee4-4e2d-be45-904e4d2a549b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timeline.body
+    - node.type.timeline
+  module:
+    - text
+    - user
+id: node.timeline.teaser
+targetEntityType: node
+bundle: timeline
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
