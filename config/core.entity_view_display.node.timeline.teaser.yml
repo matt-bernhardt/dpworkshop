@@ -28,4 +28,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_category: true
+  field_year: true
   langcode: true

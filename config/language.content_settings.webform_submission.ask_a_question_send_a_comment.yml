@@ -1,0 +1,11 @@
+uuid: 4cd0884e-7e06-4e33-b628-e7d528f7bc28
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.ask_a_question_send_a_comment
+id: webform_submission.ask_a_question_send_a_comment
+target_entity_type_id: webform_submission
+target_bundle: ask_a_question_send_a_comment
+default_langcode: site_default
+language_alterable: false
