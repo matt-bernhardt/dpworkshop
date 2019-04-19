@@ -1,0 +1,22 @@
+uuid: 727383d7-384c-4b09-8859-58a9fc23ae8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.quiz
+  module:
+    - text
+id: node.quiz.body
+field_name: body
+entity_type: node
+bundle: quiz
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

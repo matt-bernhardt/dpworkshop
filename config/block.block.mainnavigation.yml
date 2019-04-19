@@ -72,6 +72,7 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      quiz: quiz
       book: book
       webform: webform
     negate: true
