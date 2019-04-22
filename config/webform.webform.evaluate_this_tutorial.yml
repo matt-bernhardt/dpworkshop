@@ -1,0 +1,205 @@
+uuid: 6481c975-15f7-4af6-956d-daeeb327daa9
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: evaluate_this_tutorial
+title: 'Evaluate this tutorial'
+description: 'This is the (translatable) evaluation form for the tutorial.'
+category: ''
+elements: "your_name:\n  '#type': textfield\n  '#title': 'Your name'\nyour_e_mail_address:\n  '#type': email\n  '#title': 'Your e-mail address'\ncontent:\n  '#type': fieldset\n  '#title': Content\n  how_would_you_rate_this_tutorial_overall_:\n    '#type': range\n    '#title': '1. How would you rate this tutorial overall?'\n    '#description': '(on a scale of 1 - 5, with 1 being Not Helpful and 5 being Extremely Helpful)'\n    '#required': true\n    '#required_error': 'Please provide an overall rating'\n    '#min': '1'\n    '#max': '5'\n    '#output': right\n  2_is_the_tutorial_pitched_at_the_right_level_for_the_intended_au:\n    '#type': webform_buttons\n    '#title': '2. Is the tutorial pitched at the right level for the intended audience?'\n    '#options': yes_no\n  if_no_check_the_description_that_is_most_applicable:\n    '#type': checkboxes\n    '#title': 'If no, check the description that is most applicable'\n    '#options':\n      elemental: 'Too elemental'\n      advanced: 'Too advanced'\n    '#states':\n      visible:\n        ':input[name=\"2_is_the_tutorial_pitched_at_the_right_level_for_the_intended_au\"]':\n          value: 'No'\n  3_did_the_content_seem_accurate_and_up_to_date_:\n    '#type': webform_buttons\n    '#title': '3. Did the content seem accurate and up to date?'\n    '#options': yes_no\n  if_no_indicate_sections_that_need_updating_correcting:\n    '#type': textarea\n    '#title': 'If no, indicate sections that need updating / correcting'\n    '#states':\n      visible:\n        ':input[name=\"3_did_the_content_seem_accurate_and_up_to_date_\"]':\n          value: 'No'\n  4_was_the_content_relevant_:\n    '#type': webform_buttons\n    '#title': '4. Was the content relevant?'\n    '#options': yes_no\n  if_no_indicate_sections_that_we_could_reduce_or_eliminate:\n    '#type': textarea\n    '#title': 'If no, indicate sections that we could reduce or eliminate'\n    '#states':\n      visible:\n        ':input[name=\"4_was_the_content_relevant_\"]':\n          value: 'No'\n  5_was_the_content_understandable_:\n    '#type': webform_buttons\n    '#title': '5. Was the content understandable?'\n    '#options': yes_no\n  if_no_indicate_portions_that_need_to_be_reviewed:\n    '#type': textarea\n    '#title': 'If no, indicate portions that need to be reviewed'\n    '#states':\n      visible:\n        ':input[name=\"5_was_the_content_understandable_\"]':\n          value: 'No'\n  6_was_the_coverage_fairly_consistent_across_the_sections_:\n    '#type': webform_buttons\n    '#title': '6. Was the coverage fairly consistent across the sections?'\n    '#options': yes_no\n  if_no_suggest_sections_that_need_more_attention:\n    '#type': textarea\n    '#title': 'If no, suggest sections that need more attention'\n    '#states':\n      visible:\n        ':input[name=\"6_was_the_coverage_fairly_consistent_across_the_sections_\"]':\n          value: 'No'\n  7_there_is_some_built_in_redundancy_in_the_tutorial_did_you_find:\n    '#type': webform_buttons\n    '#title': '7. There is some built-in redundancy in the tutorial. Did you find this helpful?'\n    '#options': yes_no\n  if_no_suggest_areas_to_eliminate_redundancies:\n    '#type': textarea\n    '#title': 'If no, suggest areas to eliminate redundancies'\n    '#states':\n      visible:\n        ':input[name=\"7_there_is_some_built_in_redundancy_in_the_tutorial_did_you_find\"]':\n          value: 'No'\n  8_is_there_information_missing_that_you_would_have_expected_to_b:\n    '#type': webform_buttons\n    '#title': '8. Is there information missing that you would have expected to be covered?'\n    '#options': yes_no\n  if_yes_please_describe:\n    '#type': textarea\n    '#title': 'If yes, please describe'\n    '#states':\n      visible:\n        ':input[name=\"8_is_there_information_missing_that_you_would_have_expected_to_b\"]':\n          value: 'Yes'\n  9_rank_in_terms_of_information_value_the_various_sections_of_the:\n    '#type': fieldset\n    '#title': '9. Rank in terms of information value the various sections of the tutorial'\n    '#description': '(On a scale of 1 - 5, with 1 being &quot;Not Important&quot; and 5 being &quot;Extremely Helpful&quot;)'\n    1_setting_the_stage_timeline:\n      '#type': range\n      '#title': '1. Setting the Stage & Timeline'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    2_terms_and_concepts:\n      '#type': range\n      '#title': '2. Terms and Concepts'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    3_obsolescence_and_chamber_of_horrors:\n      '#type': range\n      '#title': '3. Obsolescence and Chamber of Horrors'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    4_foundations:\n      '#type': range\n      '#title': '4. Foundations'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    5_challenges:\n      '#type': range\n      '#title': '5. Challenges'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    6_program_elements:\n      '#type': range\n      '#title': '6. Program Elements'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    conclusion_additional_reading:\n      '#type': range\n      '#title': 'Conclusion & Additional Reading'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n  10_rank_in_terms_of_information_value_the_following_characterist:\n    '#type': fieldset\n    '#title': '10. Rank in terms of information value the following characteristics of the tutorial (on a scale 1-5, with 1 being not important and 5 being extremely helpful).'\n    basic_text:\n      '#type': range\n      '#title': 'Basic text'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    illustrations:\n      '#type': range\n      '#title': Illustrations\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    examples:\n      '#type': range\n      '#title': Examples\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    breakouts_by_organizational_resource_and_technical_0101_dimensio:\n      '#type': range\n      '#title': 'Breakouts by organizational , resource ($$$$) and technical (0101) dimensions'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    links_to_other_sources:\n      '#type': range\n      '#title': 'Links to other sources'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n    additional_readings:\n      '#type': range\n      '#title': 'Additional readings'\n      '#min': '1'\n      '#max': '5'\n      '#output': right\n  11_because_there_is_a_lot_of_general_information_available_on_di:\n    '#type': webform_buttons\n    '#title': 'Because there is a lot of general information available on Digital Preservation, we chose to orient the tutorial around our Digital Preservation Management (DPM) model (the three-legged stool for organizational, technological, and resources legs and the five stage organizational maturity model to build sustainable digital preservation programs). Does that approach work as a frame for the tutorial?'\n    '#options': yes_no\n  12_are_there_other_means_for_presenting_information_that_should_:\n    '#type': webform_buttons\n    '#title': '12. Are there other means for presenting information that should be included?'\n    '#description': '(e.g., help screens, glossary, search feature)'\n    '#options': yes_no\n  if_yes_please_list:\n    '#type': textarea\n    '#title': 'If yes, please list'\n    '#states':\n      visible:\n        ':input[name=\"12_are_there_other_means_for_presenting_information_that_should_\"]':\n          value: 'Yes'\ninterface_design_and_functionality:\n  '#type': fieldset\n  '#title': 'Interface Design and Functionality'\n  13_rank_the_overall_look_and_feel_of_the_tutorial:\n    '#type': range\n    '#title': '13. Rank the overall look and feel of the tutorial'\n    '#description': '(on a scale of 1 - 5, with 1 being Poor and 5 being Excellent)'\n    '#min': '1'\n    '#max': '5'\n    '#output': right\n  comments:\n    '#type': textarea\n    '#title': 'General Comments'\n  14_were_the_means_for_navigating_through_the_tutorial_flexible_a:\n    '#type': textarea\n    '#title': '14. Were the means for navigating through the tutorial flexible and intuitive? Could you get where you wanted to go without any difficulty? Did you find the navigation bars helpful? Were you able to page forward and backward easily? To move between sections smoothly?'\n  15_were_you_able_to_keep_a_sense_of_context_direction_as_you_pro:\n    '#type': webform_buttons\n    '#title': '15. Were you able to keep a sense of context/direction as you progressed through the tutorial?'\n    '#options': yes_no\n  if_no_what_would_improve_this_:\n    '#type': textarea\n    '#title': 'If no, what would improve this?'\n    '#states':\n      visible:\n        ':input[name=\"15_were_you_able_to_keep_a_sense_of_context_direction_as_you_pro\"]':\n          value: 'No'\n  16_was_the_interface_too_cluttered_e_g_were_there_too_many_objec:\n    '#type': webform_buttons\n    '#title': '16. Was the interface too cluttered? (e.g., were there too many objects onscreen?)'\n    '#options': yes_no\n  17_were_the_images_of_sufficient_quality_to_illustrate_their_poi:\n    '#type': webform_buttons\n    '#title': '17. Were the images of sufficient quality to illustrate their point?'\n    '#options': yes_no\n  if_no_which_images_need_to_be_redone_:\n    '#type': textarea\n    '#title': 'If no, which images need to be redone?'\n    '#states':\n      visible:\n        ':input[name=\"17_were_the_images_of_sufficient_quality_to_illustrate_their_poi\"]':\n          value: 'No'\n  18_was_the_text_easily_legible_:\n    '#type': webform_buttons\n    '#title': '18. Was the text easily legible?'\n    '#options': yes_no\n  19_did_you_like_the_text_layout_:\n    '#type': webform_buttons\n    '#title': '19. Did you like the text layout?'\n    '#options': yes_no\n  if_no_comment_where_appropriate_on_the_fonts_used_font_size_use_:\n    '#type': textarea\n    '#title': 'If no, comment where appropriate on the fonts used, font size, use of italics, bold, uppercase, etc. in terms of conveying a consistency, structure, and level of importance of the text.'\n    '#states':\n      visible:\n        ':input[name=\"19_did_you_like_the_text_layout_\"]':\n          value: 'No'\n  20_were_the_various_components_of_the_pages_clear_and_distinguis:\n    '#type': webform_buttons\n    '#title': '20. Were the various components of the pages clear and distinguishable from each other?'\n    '#options': yes_no\n  21_did_the_full_page_width_appear_on_your_screen_:\n    '#type': webform_buttons\n    '#title': '21. Did the full page width appear on your screen?'\n    '#options': yes_no\n  22_were_any_of_the_pages_too_long_e_g_should_certain_pages_be_fu:\n    '#type': webform_buttons\n    '#title': '22. Were any of the pages too long? (e.g., should certain pages be further subdivided?)'\n    '#options': yes_no\n  if_yes_which_ones_:\n    '#type': textarea\n    '#title': 'If yes, which ones?'\n    '#states':\n      visible:\n        ':input[name=\"22_were_any_of_the_pages_too_long_e_g_should_certain_pages_be_fu\"]':\n          value: 'Yes'\n  23_what_suggestions_do_you_have_for_improving_the_interface_:\n    '#type': textarea\n    '#title': '23. What suggestions do you have for improving the interface?'\n  24_was_there_a_problem_with_download_time_:\n    '#type': webform_buttons\n    '#title': '24. Was there a problem with download time?'\n    '#options': yes_no\n  if_yes_how_long_did_the_page_take_to_retrieve_:\n    '#type': textarea\n    '#title': 'If yes, how long did the page take to retrieve?'\n    '#states':\n      visible:\n        ':input[name=\"24_was_there_a_problem_with_download_time_\"]':\n          value: 'Yes'\n  25_did_the_links_you_chose_work_:\n    '#type': webform_buttons\n    '#title': '25. Did the links you chose work?'\n    '#options': yes_no\n  if_no_please_list:\n    '#type': textarea\n    '#title': 'If no, please list'\n    '#states':\n      visible:\n        ':input[name=\"25_did_the_links_you_chose_work_\"]':\n          value: 'No'\n  26_was_reviewing_the_tutorial_on_screen_comfortable_did_you_expe:\n    '#type': textarea\n    '#title': '26. Was reviewing the tutorial on-screen comfortable? Did you experience eye strain?'\n  27_were_there_sections_you_printed_out_for_study_if_so_which_one:\n    '#type': textarea\n    '#title': '27. Were there sections you printed out for study? If so, which one(s):'\n  other_comments:\n    '#type': textarea\n    '#title': 'Other comments:'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: false
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: true
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: 'Thank you, your submission has been received.'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: 'Tutorial Evaluation'
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: morphosis7@yahoo.com
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
