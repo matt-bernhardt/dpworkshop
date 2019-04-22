@@ -19,3 +19,7 @@ The badges at the top of this page will take you to the relevant resources and t
 ## Questions
 
 If you have any questions, please contact Matt directly.
+
+## Ignore
+
+Please ignore anything in this area. Occasionally I need to tweak the Readme file in order to start a PR.
