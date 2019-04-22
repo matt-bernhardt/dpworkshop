@@ -1,0 +1,9 @@
+uuid: 601af413-a8f3-4eb4-bbab-e5de23a78f77
+langcode: en
+status: true
+dependencies: {  }
+name: 'Timeline Category'
+vid: timeline_category
+description: 'Terms to classify entries on the interactive timeline'
+hierarchy: 0
+weight: 0
