@@ -19,6 +19,10 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/matt-bernhardt/dpm_classy"
         }
     ],
     "require": {
@@ -54,6 +58,7 @@
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
         "jackmoore/colorbox": "^1.6",
+        "matt-bernhardt/dpm_classy": "^0.1.0",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8"
