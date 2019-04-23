@@ -1,0 +1,16 @@
+uuid: 173d9f49-81b4-4471-8faf-7be0cf3f2fda
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.timeline_category
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.timeline_category
+target_entity_type_id: taxonomy_term
+target_bundle: timeline_category
+default_langcode: en
+language_alterable: true
