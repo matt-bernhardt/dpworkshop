@@ -36,7 +36,7 @@
         "drupal/core": "^8.6",
         "drupal/ctools": "^3.0",
         "drupal/diff": "^1.0@RC",
-        "drupal/field_group": "^1.0",
+        "drupal/field_group": "^3.0-rc1",
         "drupal/google_analytics": "^2.3",
         "drupal/htmlpurifier": "^1.0@RC",
         "drupal/insert": "^1.0",
