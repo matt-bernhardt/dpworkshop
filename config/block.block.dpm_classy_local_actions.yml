@@ -1,0 +1,20 @@
+uuid: 36b4dc80-e64f-4501-a869-e0cdde51d5d4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dpm_classy
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: dpm_classy_local_actions
+theme: dpm_classy
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

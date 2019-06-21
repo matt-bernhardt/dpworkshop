@@ -1,4 +1,4 @@
-uuid: 9f481d9b-2636-4e59-9bcd-7625be122491
+uuid: 2ebbeaa7-0fb1-41c7-bacb-3b6fcb63be50
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - dpm_classy
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
-region: footer_fifth
-weight: 0
+id: dpm_classy_footer
+theme: dpm_classy
+region: footer
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

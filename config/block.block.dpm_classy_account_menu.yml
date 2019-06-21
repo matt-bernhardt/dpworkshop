@@ -1,4 +1,4 @@
-uuid: 7a7efc92-5451-4edf-8d92-c34d92ca3927
+uuid: 77931d4d-125b-4ecb-a18c-a6fc11cf496f
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - dpm_classy
 _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+id: dpm_classy_account_menu
+theme: dpm_classy
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:

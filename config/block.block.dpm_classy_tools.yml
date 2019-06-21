@@ -1,4 +1,4 @@
-uuid: a9eebd50-706f-4155-b8ac-0c33b40253b5
+uuid: bee02a70-dc42-4732-ab64-363e3253d113
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - dpm_classy
 _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
-id: bartik_tools
-theme: bartik
-region: sidebar_first
-weight: -4
+id: dpm_classy_tools
+theme: dpm_classy
+region: footer
+weight: -8
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
