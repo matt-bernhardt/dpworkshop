@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad12de00877383f7424c5538a9035d9b",
+    "content-hash": "be506485a556b535bfb4dacaaffb8e3a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4123,10 +4123,10 @@
         },
         {
             "name": "matt-bernhardt/dpm_classy",
-            "version": "0.3.0-rc3",
+            "version": "0.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/matt-bernhardt/dpm_classy/archive/0.3.0-rc3.zip"
+                "url": "https://github.com/matt-bernhardt/dpm_classy/archive/0.3.0.zip"
             },
             "type": "drupal-theme"
         },
