@@ -1,0 +1,22 @@
+uuid: 398d87cf-aa99-4607-95eb-d96dc116d1b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dpm_classy
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: dpm_classy_messages
+theme: dpm_classy
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

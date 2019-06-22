@@ -1,0 +1,22 @@
+uuid: e4bd6ab5-c0a9-4b0b-b1b1-67b4eb90d450
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dpm_classy
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dpm_classy_content
+theme: dpm_classy
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

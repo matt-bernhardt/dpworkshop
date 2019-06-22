@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Timeline Category'
 vid: timeline_category
 description: 'Terms to classify entries on the interactive timeline'
-hierarchy: 0
 weight: 0
