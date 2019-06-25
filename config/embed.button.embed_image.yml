@@ -1,0 +1,20 @@
+uuid: 6bc880cb-eee5-4a86-8fe7-7850cde42bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - entity_embed
+    - media
+label: 'Embed Image'
+id: embed_image
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image
+  display_plugins: {  }
+  entity_browser: ''
+  entity_browser_settings: {  }
+icon_uuid: null

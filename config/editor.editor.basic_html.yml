@@ -43,6 +43,7 @@ settings:
             - Blockquote
             - Table
             - DrupalImage
+            - embed_image
             - video_embed
         -
           name: 'Block Formatting'
@@ -53,10 +54,10 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
+    language:
+      language_list: un
     video_embed:
       defaults:
         children:
