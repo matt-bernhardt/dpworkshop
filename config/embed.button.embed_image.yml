@@ -3,18 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.test_image_browser
     - media.type.image
+  content:
+    - 'file:file:2ebae097-7d2c-41b4-a8bd-c24ed1a23e02'
   module:
     - entity_embed
     - media
-label: 'Embed Image'
+label: 'Image Library'
 id: embed_image
 type_id: entity
 type_settings:
   entity_type: media
   bundles:
     - image
-  display_plugins: {  }
-  entity_browser: ''
-  entity_browser_settings: {  }
-icon_uuid: null
+  display_plugins:
+    - 'entity_reference:media_thumbnail'
+  entity_browser: test_image_browser
+  entity_browser_settings:
+    display_review: true
+icon_uuid: 2ebae097-7d2c-41b4-a8bd-c24ed1a23e02

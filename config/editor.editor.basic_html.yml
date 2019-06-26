@@ -42,7 +42,6 @@ settings:
             - HorizontalRule
             - Blockquote
             - Table
-            - DrupalImage
             - embed_image
             - video_embed
         -
