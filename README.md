@@ -6,7 +6,7 @@
 
 ## About the site
 
-This code repository supports a rebuilding project of the Digital Preservation Workshop website. Specifically, this project attempts to build a fresh copy of the site using Drupal 8.
+This code repository supports a rebuilding project of the [Digital Preservation Workshop website](https://dpworkshop.org). Specifically, this project attempts to build a fresh copy of the site using Drupal 8.
 
 For now, this is a work in progress.
 
