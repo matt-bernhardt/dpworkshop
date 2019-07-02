@@ -47,6 +47,7 @@ settings:
         -
           name: 'Block Formatting'
           items:
+            - CreateDiv
             - Format
         -
           name: Tools
