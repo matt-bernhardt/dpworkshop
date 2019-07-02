@@ -31,15 +31,32 @@
                     "url": "https://github.com/matt-bernhardt/dpm_classy/archive/0.3.0.zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/div",
+                "version": "4.10.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor/plugins/div"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/div/releases/div_4.10.1.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=7.0.8",
+        "ckeditor/div": "4.10.1",
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/admin_toolbar": "^1.25",
         "drupal/bootstrap": "^3.16",
+        "drupal/ckeditor_div_manager": "^1.0.0",
         "drupal/colorbox": "^1.4",
         "drupal/colorbox_inline": "^1.1",
         "drupal/config_direct_save": "^1.0",
