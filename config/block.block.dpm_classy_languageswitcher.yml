@@ -23,6 +23,7 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       book: book
+      quiz: quiz
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
