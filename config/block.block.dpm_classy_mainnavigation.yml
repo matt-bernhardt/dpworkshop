@@ -74,6 +74,7 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       book: book
+      quiz: quiz
       webform: webform
     negate: true
     context_mapping:

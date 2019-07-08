@@ -1,5 +1,6 @@
 allowed_types:
   - book
+  - quiz
   - webform
 block:
   navigation:

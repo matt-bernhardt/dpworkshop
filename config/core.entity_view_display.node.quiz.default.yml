@@ -1,0 +1,29 @@
+uuid: cd98695c-52cd-4a80-9d05-fa010c104f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quiz.body
+    - node.type.quiz
+  module:
+    - text
+    - user
+id: node.quiz.default
+targetEntityType: node
+bundle: quiz
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
