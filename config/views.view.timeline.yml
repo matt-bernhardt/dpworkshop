@@ -291,6 +291,19 @@ display:
             label: ''
           plugin_id: standard
       header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: 'This timeline highlights key events, projects, publications, and technological changes affecting the use of digital technology and efforts to preserve it. Several views of this timeline are available by clicking on the green tabs above. For the complete listing of entries, choose “View All.” You can also navigate the timeline by selecting a date. The seven subject categories include:'
+            format: basic_html
+          plugin_id: text
         view:
           id: view
           table: views
@@ -346,6 +359,24 @@ display:
           break_phrase: false
           not: false
           plugin_id: numeric
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_year'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
       display_extenders: {  }
     cache_metadata:
       max-age: -1

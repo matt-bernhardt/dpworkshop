@@ -4,17 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13ecb94a0c2929d86d3d0b41e0840fe3",
+    "content-hash": "27ffdae236e04fe835635a69ab1a5ae4",
     "packages": [
-        {
-            "name": "MITLibraries/dpm_classy",
-            "version": "0.5.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/MITLibraries/dpm_classy/archive/0.5.0.zip"
-            },
-            "type": "drupal-theme"
-        },
         {
             "name": "alchemy/zippy",
             "version": "0.4.9",
@@ -4390,6 +4381,15 @@
                 "plugin"
             ],
             "time": "2017-05-30T13:00:18+00:00"
+        },
+        {
+            "name": "mitlibraries/dpm_classy",
+            "version": "0.6.0-beta2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mitlibraries/dpm_classy/archive/0.6.0-beta2.zip"
+            },
+            "type": "drupal-theme"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",

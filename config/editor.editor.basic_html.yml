@@ -59,7 +59,7 @@ settings:
     language:
       language_list: un
     stylescombo:
-      styles: "div.case-in-point|Case In Point\r\ndiv.check-out|Check This Out\r\ndiv.did-you-know.left|Did You Know (left)\r\ndiv.did-you-know.right|Did You Know (right)\r\ndiv.exercise|Exercise\r\ndiv.highlight|Highlight\r\ndiv.suggested|Suggested\r\ndiv.watch-this|Watch Time"
+      styles: "a.colorbox|Colorbox link\r\ndiv.case-in-point|Case In Point\r\ndiv.check-out|Check This Out\r\ndiv.did-you-know.left|Did You Know (left)\r\ndiv.did-you-know.right|Did You Know (right)\r\ndiv.exercise|Exercise\r\ndiv.highlight|Highlight\r\ndiv.suggested|Suggested\r\ndiv.watch-this|Watch Time"
     video_embed:
       defaults:
         children:
