@@ -1,0 +1,11 @@
+uuid: b12106dc-47de-404b-97f5-632d4dcbc6ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: dial_blank_en
+title: 'Dial - Blank (Eng)'
+content:
+  value: "<p><img alt=\"Navigation dial\" src=\"/sites/default/files/2019-07/dial.png\" usemap=\"#navdial\" /><map id=\"navdial\" name=\"navdial\" title=\"Digital Preservation Management\"><area alt=\"Timeline\" coords=\"129,26,10\" href=\"/dpm-eng/timeline/index.html\" shape=\"circle\" /> <area alt=\"Terminology\" coords=\"136,57,12\" href=\"/dpm-eng/terminology/index.html\" shape=\"circle\" /> <area alt=\"Chamber of Horrors\" coords=\"115,81,10\" href=\"/dpm-eng/oldmedia/index.html\" shape=\"circle\" /> <area alt=\"Foundation Documents\" coords=\"85,71,11\" href=\"/dpm-eng/foundation/index.html\" shape=\"circle\" /> <area alt=\"Challenges\" coords=\"75,42,11\" href=\"/dpm-eng/challenges/index.html\" shape=\"circle\" /> <area alt=\"Program Elements\" coords=\"99,21,11\" href=\"/dpm-eng/program/index.html\" shape=\"circle\" /> <area alt=\"home\" coords=\"108,49,16\" href=\"/dpm-eng/eng_index.html\" shape=\"circle\" /></map></p>\r\n"
+  format: full_html

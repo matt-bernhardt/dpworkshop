@@ -1,0 +1,28 @@
+uuid: 50b92e17-efe4-4cd8-956a-871475b97e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.dial_blank_en
+  module:
+    - simple_block
+    - system
+  theme:
+    - dpm_classy
+id: dialblankeng
+theme: dpm_classy
+region: dial
+weight: 0
+provider: null
+plugin: 'simple_block:dial_blank_en'
+settings:
+  id: 'simple_block:dial_blank_en'
+  label: 'Dial - Blank (Eng)'
+  provider: simple_block
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/workshops/*"
+    negate: true
+    context_mapping: {  }
