@@ -24,11 +24,11 @@
             "type": "package",
             "package": {
                 "name": "mitlibraries/dpm_classy",
-                "version": "0.6.0-beta2",
+                "version": "0.6.0",
                 "type": "drupal-theme",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/mitlibraries/dpm_classy/archive/0.6.0-beta2.zip"
+                    "url": "https://github.com/mitlibraries/dpm_classy/archive/0.6.0.zip"
                 }
             }
         },
@@ -85,7 +85,7 @@
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
         "jackmoore/colorbox": "^1.6",
-        "mitlibraries/dpm_classy": "0.6.0-beta2",
+        "mitlibraries/dpm_classy": "0.6.0",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8"
