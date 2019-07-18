@@ -12,9 +12,23 @@ For now, this is a work in progress.
 
 ## About the tooling
 
-This repository can be deployed on Pantheon via the Circle CI service, following the instructions in Pantheon's [Build Tools](https://pantheon.io/docs/guides/build-tools/) tutorial. It leverages the Terminus and Composer CLI tools, as well as unit tests from Behat and code linting on Circle CI.
+This repository can be deployed on Pantheon via the Circle CI service, following the instructions in Pantheon's [Build Tools](https://pantheon.io/docs/guides/build-tools/) tutorial. It leverages the Terminus (and Terminus Secrets Plugin) and Composer CLI tools, as well as unit tests from Behat and code linting on Circle CI.
 
 The badges at the top of this page will take you to the relevant resources and the running website.
+
+### Terminus Secrets
+
+This site includes the [SMTP](https://www.drupal.org/project/smtp) module, whose integration requires a username and password for sending email. Some of these settings should be managed using the [Terminus Secrets Plugin](https://github.com/pantheon-systems/terminus-secrets-plugin). The list of values that need to be defined are:
+
+- `smtp_from`
+- `smtp_fromname`
+- `smtp_host`
+- `smtp_password`
+- `smtp_port`
+- `smtp_protocol`
+- `smtp_username`
+
+Failure to define any of these values will result in the site not being able to send emails.
 
 ## Questions
 
