@@ -1,6 +1,29 @@
 <?php
 
 /**
+ * Load configuration overrides.
+ */
+$secrets_file = $_SERVER['HOME'] . '/files/private/secrets.json';
+/*
+if ( ! file_exists( $secrets_file ) ) {
+  // die('No secrets file found at ' . $secrets_file );
+}
+*/
+$secrets = json_decode( file_get_contents( $secrets_file ), 1 );
+/*
+if ( false == $secrets ) {
+  // die( 'Error parsing secrets file' );
+}
+*/
+$config['smtp.settings']['smtp_from']     = $secrets['smtp_from'];
+$config['smtp.settings']['smtp_fromname'] = $secrets['smtp_fromname'];
+$config['smtp.settings']['smtp_host']     = $secrets['smtp_host'];
+$config['smtp.settings']['smtp_password'] = $secrets['smtp_password'];
+$config['smtp.settings']['smtp_port']     = $secrets['smtp_port'];
+$config['smtp.settings']['smtp_protocol'] = $secrets['smtp_protocol'];
+$config['smtp.settings']['smtp_username'] = $secrets['smtp_username'];
+
+/**
  * Load services definition file.
  */
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
