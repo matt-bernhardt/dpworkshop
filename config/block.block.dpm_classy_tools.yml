@@ -1,6 +1,6 @@
 uuid: bee02a70-dc42-4732-ab64-363e3253d113
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
