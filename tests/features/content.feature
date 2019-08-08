@@ -58,12 +58,33 @@ Feature: Content
     Then I should see the link "Joe User"
 
   @api
+  Scenario: There is no login link on the front page
+    When I am on the homepage
+    Then I should not see the link "Log in"
+
+  @api
+  Scenario: There is no register link on the login page
+    When I go to "user/login"
+    Then I should not see the link "Create new account"
+
+  @api
+  Scenario: There is no logout link on the front page
+    Given users:
+    | name      | status | mail             |
+    | Test user |      1 | test@example.com |
+    When I am logged in as "Test user"
+    And I am on the homepage
+    Then I should not see the link "Log out"
+
+  @api
   Scenario: Login as a user created during this scenario
     Given users:
     | name      | status | mail             |
     | Test user |      1 | test@example.com |
     When I am logged in as "Test user"
-    Then I should see the link "Log out"
+    Then I should not see the link "Log out"
+    And I am on "user"
+    Then I should see the link "Home"
 
 # Similarly, 'When I am viewing a ... term' also uses bad characters.
 
