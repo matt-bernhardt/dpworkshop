@@ -30,6 +30,19 @@ This site includes the [SMTP](https://www.drupal.org/project/smtp) module, whose
 
 Failure to define any of these values will result in the site not being able to send emails.
 
+## Working with this repository
+
+In order to get this site running locally, the following steps are generally necessary:
+
+1. Start by cloning this repository into an Apache webroot directory. There should also be a database connection to MySQL available.
+2. Load the site in a browser, and select "Configuration install" when asked to select a profile.
+3. Provide the relevant database connection details when asked (this may change to env variables)
+4. For now, due to a bug in Drupal, the install will appear to fail due to a Standard module. This is a mistake. Re-load the site homepage and you should see a shell of the site.
+5. Generate a one-time login link via `drush uli` for User 1. Log in, clear caches, and import the configuration.
+6. Download the database and file contents from Pantheon, and import/unzip them to the database and sites/default/files per usual.
+
+If you run into problems, ask Matt.
+
 ## Questions
 
 If you have any questions, please contact Matt directly.
