@@ -383,13 +383,14 @@ display:
       path: timeline/timeline
       menu:
         type: normal
-        title: 'Timeline (view)'
+        title: Timeline
         description: ''
         expanded: false
         parent: 'menu_link_content:212f4e0e-6a0d-4c44-9939-17d4b78205ba'
-        weight: 0
+        weight: -70
         context: '0'
         menu_name: tutorial
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
