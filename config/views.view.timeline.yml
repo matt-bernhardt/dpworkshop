@@ -302,7 +302,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'This timeline highlights key events, projects, publications, and technological changes affecting the use of digital technology and efforts to preserve it. Several views of this timeline are available by clicking on the green tabs above. For the complete listing of entries, choose “View All.” You can also navigate the timeline by selecting a date. The seven subject categories include:'
+            value: 'This timeline highlights key events, projects, publications, and technological changes affecting the use of digital technology and efforts to preserve it. You can apply filters to the timeline by clicking on the green tabs below. For a complete, unfiltered, list of entries, choose <a href="/dpm-eng/timeline/timeline">Timeline: Digital Technology and Preservation</a> in the breadcrumbs above. The seven subject categories include:'
             format: basic_html
           plugin_id: text
         view:
