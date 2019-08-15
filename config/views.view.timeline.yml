@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_year
     - node.type.timeline
+    - system.menu.tutorial
     - taxonomy.vocabulary.timeline_category
     - views.view.timeline_categories
   module:
@@ -301,7 +302,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'This timeline highlights key events, projects, publications, and technological changes affecting the use of digital technology and efforts to preserve it. Several views of this timeline are available by clicking on the green tabs above. For the complete listing of entries, choose “View All.” You can also navigate the timeline by selecting a date. The seven subject categories include:'
+            value: 'This timeline highlights key events, projects, publications, and technological changes affecting the use of digital technology and efforts to preserve it. You can apply filters to the timeline by clicking on the green tabs below. For a complete, unfiltered, list of entries, choose <a href="/dpm-eng/timeline/timeline">Timeline: Digital Technology and Preservation</a> in the breadcrumbs above. The seven subject categories include:'
             format: basic_html
           plugin_id: text
         view:
@@ -360,24 +361,7 @@ display:
           not: false
           plugin_id: numeric
       display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_year'
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
-    position: 2
-    display_options:
-      display_extenders: {  }
+      title: 'Timeline: Digital Technology and Preservation'
     cache_metadata:
       max-age: -1
       contexts:
@@ -396,7 +380,17 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: timeline
+      path: timeline/timeline
+      menu:
+        type: normal
+        title: Timeline
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:212f4e0e-6a0d-4c44-9939-17d4b78205ba'
+        weight: -70
+        context: '0'
+        menu_name: tutorial
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

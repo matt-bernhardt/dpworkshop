@@ -1,23 +1,23 @@
-uuid: 5f2ff2a8-bd39-4ccc-8d55-a316af0945b7
+uuid: 99bdd343-1709-4707-9184-de289be4f7eb
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.tutorial
   module:
-    - node
     - superfish
+    - system
   theme:
     - dpm_classy
-id: dpm_classy_tutorial
+id: tutorial_2
 theme: dpm_classy
 region: sidebar
-weight: -8
+weight: -7
 provider: null
 plugin: 'superfish:tutorial'
 settings:
   id: 'superfish:tutorial'
-  label: 'Tutorial (book)'
+  label: 'Tutorial (for timeline)'
   provider: superfish
   label_display: '0'
   level: '1'
@@ -70,12 +70,8 @@ settings:
   custom_item_class: ''
   custom_link_class: ''
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      book: book
-      quiz: quiz
-      webform: webform
+  request_path:
+    id: request_path
+    pages: "/timeline\r\n/timeline*"
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }

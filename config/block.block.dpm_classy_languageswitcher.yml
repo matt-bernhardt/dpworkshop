@@ -10,7 +10,7 @@ dependencies:
 id: dpm_classy_languageswitcher
 theme: dpm_classy
 region: sidebar
-weight: -6
+weight: -5
 provider: null
 plugin: 'language_block:language_interface'
 settings:

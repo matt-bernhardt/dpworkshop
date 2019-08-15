@@ -12,7 +12,7 @@ dependencies:
 id: dpm_classy_mainnavigation
 theme: dpm_classy
 region: sidebar
-weight: -8
+weight: -9
 provider: null
 plugin: 'superfish:main'
 settings:
