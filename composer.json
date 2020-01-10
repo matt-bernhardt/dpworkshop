@@ -67,7 +67,7 @@
         "drupal/entity_browser": "^2.1",
         "drupal/entity_embed": "^1.0@RC",
         "drupal/field_group": "^3.0-rc1",
-        "drupal/google_analytics": "^2.3",
+        "drupal/google_analytics": "^3.0",
         "drupal/htmlpurifier": "^1.0@RC",
         "drupal/insert": "^1.0",
         "drupal/libraries": "^3.0@alpha",
