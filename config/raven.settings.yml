@@ -1,13 +1,13 @@
-client_key: ''
-environment: ''
-release: ''
-fatal_error_handler: false
+client_key: 'NoDSNValuesInGit'
+environment: Default
+release: 3.0.0
+fatal_error_handler: true
 fatal_error_handler_memory: 2560
 log_levels:
-  1: 0
-  2: 0
-  3: 0
-  4: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
   5: 0
   6: 0
   7: 0
@@ -21,3 +21,8 @@ ssl: verify_ssl
 ca_cert: ''
 _core:
   default_config_hash: 3JeQoF7K4ASK6HrsvqqzVSDTIfrOh9pXxdd-mLlAbh4
+drush_error_handler: false
+message_limit: 2048
+ignored_channels:
+  - 'access denied'
+  - 'page not found'

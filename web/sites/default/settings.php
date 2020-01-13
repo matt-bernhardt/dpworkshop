@@ -22,6 +22,8 @@ $config['smtp.settings']['smtp_password'] = $secrets['smtp_password'];
 $config['smtp.settings']['smtp_port']     = $secrets['smtp_port'];
 $config['smtp.settings']['smtp_protocol'] = $secrets['smtp_protocol'];
 $config['smtp.settings']['smtp_username'] = $secrets['smtp_username'];
+$config['raven.settings']['client_key'] = $secrets['sentry_dsn'];
+$config['raven.settings']['environment'] = $_ENV['PANTHEON_ENVIRONMENT'];
 
 /**
  * Load services definition file.
