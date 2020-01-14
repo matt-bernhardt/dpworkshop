@@ -22,6 +22,8 @@ $config['smtp.settings']['smtp_password'] = $secrets['smtp_password'];
 $config['smtp.settings']['smtp_port']     = $secrets['smtp_port'];
 $config['smtp.settings']['smtp_protocol'] = $secrets['smtp_protocol'];
 $config['smtp.settings']['smtp_username'] = $secrets['smtp_username'];
+$config['raven.settings']['client_key'] = $secrets['sentry_dsn'];
+$config['raven.settings']['environment'] = $_ENV['PANTHEON_ENVIRONMENT'];
 
 /**
  * Load services definition file.
@@ -42,9 +44,7 @@ include __DIR__ . "/settings.pantheon.php";
 /**
  * Place the config directory outside of the Drupal root.
  */
-$config_directories = array(
-  CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
-);
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config';
 
 /**
  * If there is a local settings file, then include it
