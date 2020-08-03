@@ -29,25 +29,6 @@ Feature: Content
     And I should see "First article"
     And I should see "Second article"
 
-# Setting the body field contents does not seem to be effective
-
-#  @api
-#  Scenario: Create nodes with fields
-#    Given "article" content:
-#    | title                     | promote | body             |
-#    | First article with fields |       1 | PLACEHOLDER BODY |
-#    When I am on the homepage
-#    And follow "First article with fields"
-#    Then I should see the text "PLACEHOLDER BODY"
-
-#  @api
-#  Scenario: Create and view a node with fields
-#    Given I am viewing an "Article" content:
-#    | title | My article with fields! |
-#    | body  | A placeholder           |
-#    Then I should see the heading "My article with fields!"
-#    And I should see the text "A placeholder"
-
   @api
   Scenario: Create users
     Given users:
@@ -86,14 +67,6 @@ Feature: Content
     And I am on "user"
     Then I should see the link "Home"
 
-# Similarly, 'When I am viewing a ... term' also uses bad characters.
-
-#  @api
-#  Scenario: Create a term
-#    Given I am logged in as a user with the "administrator" role
-#    When I am viewing a "tags" term with the name "My tag"
-#    Then I should see the heading "My tag"
-
   @api
   Scenario: Create many terms
     Given "tags" terms:
@@ -118,5 +91,3 @@ Feature: Content
     Then I should see the link "Article by Joe"
     When I follow "Article by Joe"
     Then I should see the text "Article by Joe"
-    # Todo: The node is created by 'Anonymous', but it should be created by 'Joe User'
-    # And I should see the link "Joe User"
